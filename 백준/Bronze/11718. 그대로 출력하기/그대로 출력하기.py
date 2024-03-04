@@ -1,6 +1,6 @@
-while (True):
-    try:
-        C = input()
-        print(C)
-    except:
-        break
+while(True):
+  try:
+    a = input()
+    print(a)
+  except:
+    break
