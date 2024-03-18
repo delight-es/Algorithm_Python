@@ -11,12 +11,7 @@ for i in range(N):
 
 for i in range(1,N+1):
     for j in range(1,N+1):
-        if i==1:
-            S[i][j] = S[i][j-1] + arr[i][j]
-        elif j==1:
-            S[i][j] = S[i-1][j] + arr[i][j]
-        else:
-            S[i][j] = S[i-1][j] + S[i][j-1] - S[i-1][j-1] + arr[i][j]
+        S[i][j] = S[i - 1][j] + S[i][j - 1] - S[i - 1][j - 1] + arr[i][j]
 
 for i in range(M):
     x1, y1, x2, y2 = map(int, input().split())
